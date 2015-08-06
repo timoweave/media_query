@@ -1,0 +1,44 @@
+#header {
+    background-color: lightgrey;
+    padding-top:0.05em;
+    padding-bottom:0.1em;
+    padding-left:2em;
+    padding-right:2em;
+}
+
+#menu ul {
+    list-style: none;
+    padding-left:0em;
+    margin-left:0em;
+}
+
+#menu ul li {
+    background-color: lightgrey;
+    border: 1px solid darkgrey;
+    padding-left: 1em;
+    padding-right: 1em;
+    display: inline-block;
+}
+
+#content {
+    box-sizing: border-box;
+}
+
+#content .col3 {
+    margin-right: 1.5em;
+}
+
+@media screen and (max-width: 62em) {
+    #menu {
+        display : none;
+        visibility: hidden;
+    }
+    
+    #content .col3 {
+        width: 30%;
+    }
+    
+    #content .col3:nth-last-child(1) {
+        width: 99%;
+    }
+}
